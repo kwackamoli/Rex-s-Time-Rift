@@ -16,19 +16,19 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Application.targetFrameRate = 60;
     }
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.A)){
-            rigidbody.AddForce(transform.right*-speed);
+            rigidbody.AddForce(transform.right*-speed * Time.deltaTime);
             sprite.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
             animator.Play("walking");
         }
         else if (Input.GetKey(KeyCode.D)){
-            rigidbody.AddForce(transform.right*speed);
+            rigidbody.AddForce(transform.right*speed * Time.deltaTime);
             sprite.transform.localScale = new Vector3(-0.5f, 0.5f, 0.5f);
             animator.Play("walking");
         }else
@@ -49,5 +49,11 @@ public class PlayerMovement : MonoBehaviour
         }else{
             isgrounded = false;
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape)){
+            Application.Quit();
+        }
+
+
     }
 }
