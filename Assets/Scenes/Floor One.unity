@@ -4475,6 +4475,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6173070453286979819, guid: 8a0eb1e72aa78bd47a50636a3d083790, type: 3}
+      propertyPath: scenename
+      value: Floor Two
+      objectReference: {fileID: 0}
     - target: {fileID: 6265698844141110470, guid: 8a0eb1e72aa78bd47a50636a3d083790, type: 3}
       propertyPath: m_Name
       value: Box
