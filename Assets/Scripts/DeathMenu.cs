@@ -7,12 +7,13 @@ public class DeathMenu : MonoBehaviour
 {
     public string mainMenuName;
 
-    public string currentSceneName;
 
     public void RestartLevel()
     {
        
-        SceneManager.LoadScene(currentSceneName);
+       // SceneManager.LoadScene(currentSceneName);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
     }
 
     public void LoadMenu()
