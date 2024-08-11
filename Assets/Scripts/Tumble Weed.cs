@@ -11,8 +11,9 @@ public class TumbleWeed : MonoBehaviour
         if (other.gameObject.name == "Player")
         {
             Score.pickupsCollected = 0;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
+            DeathScreenManager.Instance.SetDeathMenu(true);
         }
 
     }
