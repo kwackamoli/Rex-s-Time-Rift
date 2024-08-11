@@ -20,8 +20,8 @@ public class Lava : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.name == "Player"){
             Score.pickupsCollected = 0;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
+            // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            DeathScreenManager.Instance.SetDeathMenu(true);
         }
     }
 }
