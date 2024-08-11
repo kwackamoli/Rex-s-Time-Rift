@@ -6259,6 +6259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 0}
+  chuckles: 1000
 --- !u!82 &965658719
 AudioSource:
   m_ObjectHideFlags: 0
